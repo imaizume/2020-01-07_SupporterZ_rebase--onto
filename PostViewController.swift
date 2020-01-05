@@ -11,5 +11,9 @@ class PostViewController: UIViewController {
 
   /// 投稿一覧を表示する
   private func listPosts(_ posts: [String]) {
+    let postCount: Int = posts.count
+    for index in 0..<postCount {
+      print(posts[index])
+    }
   }
 }
