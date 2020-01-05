@@ -7,6 +7,10 @@ class PostViewController: UIViewController {
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+
+    fetchPosts() { posts in
+      self.listPosts(posts)
+    }
   }
 
   /// 投稿一覧を表示する
